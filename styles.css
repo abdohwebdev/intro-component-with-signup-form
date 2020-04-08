@@ -1,0 +1,143 @@
+/* define colors */
+/* primary*/
+/* accent */
+/* neutral */
+/* end of defining colors */
+/* Fonts */
+html {
+  height: 100%;
+}
+
+body {
+  color: white;
+  background: url("images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+  font-size: 16px;
+  font-family: "poppins", sans-serif !important;
+  height: 100%;
+}
+
+#intro h1 {
+  max-width: 400px;
+  font-weight: 700 !important;
+}
+#intro p {
+  font-weight: 400 !important;
+}
+
+#try {
+  font-weight: 600 !important;
+  background-color: #6055a5;
+  max-width: 450px;
+  border-radius: 10px;
+}
+#try span {
+  color: #b9b6d3;
+}
+
+form {
+  max-width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 16px !important;
+}
+form .form-control:focus {
+  border: 1px solid black !important;
+  box-shadow: none !important;
+}
+form .btn:focus {
+  box-shadow: none !important;
+}
+form input, form button {
+  font-size: 70% !important;
+}
+form button {
+  background-color: #38cc8c !important;
+  color: white !important;
+}
+form .form-group {
+  font-size: 16px;
+  font-weight: 700 !important;
+}
+form small {
+  color: #b9b6d3;
+  font-size: 60%;
+}
+form small a {
+  color: #ff7a7a;
+}
+form small a:hover {
+  color: #ff7a7a;
+  text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: black !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black !important;
+}
+
+::placeholder {
+  color: black !important;
+}
+
+.invalid-feedback {
+  color: #ff7a7a;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: url("images/icon-error.svg") !important;
+  background-size: auto !important;
+  color: #ff7a7a !important;
+  border-color: #ff7a7a !important;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+  color: #38cc8c !important;
+  border-color: #38cc8c !important;
+}
+
+@media only screen and (max-width: 540px) {
+  body {
+    background: url("images/bg-intro-mobile");
+    background-color: #ff7a7a;
+  }
+
+  #intro {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  #intro h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  #intro p {
+    text-align: center;
+    max-width: 320px;
+  }
+
+  #try {
+    padding: 0px 40px 0px 40px;
+  }
+
+  form {
+    margin-bottom: 50px;
+  }
+  form .form-group {
+    font-size: 20px;
+    font-weight: 700 !important;
+  }
+  form button {
+    font-size: 16px !important;
+  }
+
+  small {
+    font-size: 80% !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

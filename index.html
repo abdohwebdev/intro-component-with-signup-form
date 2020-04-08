@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet"> 
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>intro component with signup form</title>
+  </head>
+  <body>
+    <div class="container h-100">
+      
+      <div class="row h-100 justify-content-center align-items-center">
+
+        <div class="col-sm" id="intro">
+          <h1 class="ml-5">Learn to code by watching others</h1>
+          <p class="ml-sm-5">see how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invalueable.</p>
+
+        </div>
+        <div class="col-sm text-center" id="signup">
+          
+          <div id="try" class="py-3 mx-auto mb-3 shadow">
+
+            Try it free 7 days <span>then $20/mo.thereater</span>
+
+          </div>
+
+          <form class="mx-auto p-4 shadow needs-validation" method="post" novalidate>
+
+            <div class="form-group">
+              <input type="text" class="form-control p-4" id="firstName" placeholder="First Name" required>
+              <div class="invalid-feedback text-right">First Name cannot be empty</div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control p-4" id="lastName" placeholder="Last Name" required>
+              <div class="invalid-feedback text-right">Last Name cannot be empty</div>
+            </div>                        
+
+            <div class="form-group">
+              <input type="email" class="form-control p-4" id="email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+              <div class="invalid-feedback text-right">Looks like this is not an email</div>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control p-4" id="password" placeholder="Password" required>
+              <div class="invalid-feedback text-right">Password cannot be empty</div>
+            </div>
+            
+            <button type="submit" class="btn w-100 py-sm-3">CLAIM YOUR FREE TRIAL</button>
+
+            <small>By clicking the button you are agreeing to our <a href="">Terms and Services</a></small>
+          
+          </form>
+
+
+        </div>
+
+      </div>
+    
+    </div>     
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts.js"></script>    
+  </body>
+</html>

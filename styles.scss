@@ -1,0 +1,188 @@
+/* define colors */
+/* primary*/
+$primary_1:hsl(0, 100%, 74%);
+$primary_2:hsl(154, 59%, 51%);
+
+/* accent */
+$accent:hsl(248, 32%, 49%);
+
+/* neutral */
+$neutral_1:hsl(249, 10%, 26%);
+$neutral_2:hsl(246, 25%, 77%);
+/* end of defining colors */
+
+/* Fonts */
+$size:16px;
+$family:'poppins' , sans-serif;;
+$weight_1:400;
+$weight_2:500;
+$weight_3:600;
+$weight_4:700;
+
+html{
+	height:100%;
+}
+body{
+	color:white;
+	background:url('images/bg-intro-desktop.png');
+	background:{
+		color:$primary_1;
+	}
+	font:{
+		size:$size;
+		family:$family !important;
+	}	
+	height:100%;
+}
+#intro{
+	h1{
+		max-width:400px;
+		font:{
+			weight:$weight_4 !important;
+		}
+	}
+	p{
+		font:{
+			weight:$weight_1 !important;
+		}
+	}
+
+}
+#try{
+	font:{
+		weight:$weight_3 !important;
+	}
+	background:{
+		color:$accent;
+	}
+	max-width:450px;
+	border-radius:10px;
+	span{
+		color:$neutral_2;
+	}
+}
+form{
+	max-width:450px;
+	background:{
+		color:white;
+	}
+	border:{
+		radius:10px;
+	}
+	font:{
+		size:$size !important;
+	}
+	.form-control:focus {
+		border:1px solid black !important;
+		box-shadow:none !important;
+	}
+	.btn:focus{
+		box-shadow:none !important;
+	}	
+	input,button{
+		font:{
+			size:70% !important;
+		}
+	}
+	button{
+		background:{
+			color:$primary_2 !important;
+		}
+		color:white !important;	
+	}
+	.form-group{
+		font:{
+			size:$size;
+			weight:$weight_4 !important;
+		}
+	}
+	small{
+		color:$neutral_2;
+		font:{
+			size:60%;
+		}		
+		a{
+			color:$primary_1;
+		}
+		a:hover{
+			color:$primary_1;
+			text:{
+				decoration:none;
+			}
+		}
+	}
+}
+ ::-webkit-input-placeholder { /* Edge */
+  color: black !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black !important;
+}
+
+::placeholder {
+  color: black !important;
+}
+.invalid-feedback{
+	color:$primary_1;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+	background:{
+		image:url("images/icon-error.svg") !important;
+		size:auto !important;
+	}
+	color:$primary_1 !important;
+	border-color:$primary_1 !important;	
+}
+.form-control.is-valid, .was-validated .form-control:valid{
+	color:$primary_2 !important;
+	border-color:$primary_2 !important;
+}
+@media only screen and (max-width: 540px) {
+	body{
+		background:url('images/bg-intro-mobile');
+		background:{
+			color:$primary_1;
+		}
+	}
+	#intro{
+		margin:{
+			top:100px;
+			bottom:40px;
+		}
+		h1{
+			font:{
+				size:25px;
+			}
+			margin-bottom:30px;
+		}
+		p{
+			text:{
+				align:center;
+			}
+			max-width:320px;
+		}
+	}
+	#try{
+		padding:0px 40px 0px 40px;
+	}
+	form{
+		margin-bottom:50px;
+		.form-group{
+			font:{
+				size:20px;
+				weight:$weight_4 !important;
+			}
+		}
+		button{
+			font:{
+				size:16px !important;
+			}
+		}
+	}
+	small{
+		font:{
+			size:80% !important;
+		}
+	}
+} 
